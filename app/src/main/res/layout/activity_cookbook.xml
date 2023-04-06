@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cookbook"
+    android:background="#fde0d9">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="651dp"
+        android:text="Cookbook"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/buttonvegan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="15dp"
+        android:text="Vegan"
+        app:layout_constraintBottom_toTopOf="@+id/button_vegetarian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_vegetarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="15dp"
+        android:text="Vegetarian"
+        app:layout_constraintBottom_toTopOf="@+id/button_healthy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonvegan" />
+
+    <Button
+        android:id="@+id/button_healthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="15dp"
+        android:text="Healthy"
+        app:layout_constraintBottom_toTopOf="@+id/button_quick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vegetarian" />
+
+    <Button
+        android:id="@+id/button_quick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="14dp"
+        android:text="Quick"
+        app:layout_constraintBottom_toTopOf="@+id/button_italian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_healthy" />
+
+    <Button
+        android:id="@+id/button_sweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sweet"
+        app:layout_constraintBottom_toTopOf="@+id/button_christmas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_italian" />
+
+    <Button
+        android:id="@+id/button_italian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="13dp"
+        android:text="Italian"
+        app:layout_constraintBottom_toTopOf="@+id/button_sweet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_quick" />
+
+    <Button
+        android:id="@+id/button_christmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="18dp"
+        android:text="Christmas"
+        app:layout_constraintBottom_toTopOf="@+id/button_meat_lovers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sweet" />
+
+    <Button
+        android:id="@+id/button_meat_lovers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="33dp"
+        android:text="Meat-lovers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_christmas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
